@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop</title>   
+
+    <!--ENLACE FICHERO CSS-->    
+    <link rel="stylesheet" href="./style.css">
+
+    <!--ENLACE FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  </head>
+
+<body>
+  <div class="container">
+
+    <!--HEADER-->
+    <header class="header">
+      <h1>GreenShop</h1>
+      <nav class="nav">
+        <ul>
+          <li>Inicio</li>
+          <li>Plantas</li>
+          <li>Blog</li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+      
+      <!--SEPARAR EL CARRITO DEL NAV PARA MEJOR MANEJO DEL CÓDIGO-->
+      <div class="cart-container">
+        <i id="email" class="fa-solid fa-envelope"></i>
+        <i id="phone" class="fa-duotone fa-solid fa-phone"></i>
+        <i id="cart_button" class="fa-solid fa-cart-shopping"></i>
+        <div class="cart_dropdown">
+          <h3>CARRITO</h3>
+          <ul class="items"></ul>
+          <p id="total">TOTAL: 0€</p>
+          <button id="clean" class="add">VACIAR</button>
+          <button id="pay" class="add">PAGAR</button>
+        </div>
+        <i id="user" class="fa-solid fa-user"></i>
+      </div>
+    </header>
+
+    <!--MAIN-->
+    <main>
+      <section class="plants" id="plants-list"></section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <p>&copy; 2025 GreenShop - Todos los derechos reservados</p>
+    </footer>
+
+  </div>
+
+  <!--ENLACE FICHEROS JS-->
+  <script src="./JS/data.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+</html>
